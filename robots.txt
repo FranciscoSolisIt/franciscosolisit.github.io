@@ -1,0 +1,12 @@
+# El sitio es público por enlace, pero no debe aparecer en buscadores.
+#
+# El bloqueo real lo hace la etiqueta <meta name="robots" content="noindex">
+# de cada página, y por eso aquí SÍ se permite el rastreo: un buscador que
+# tiene prohibido entrar nunca llega a leer esa etiqueta, y puede terminar
+# listando la URL igual si la encuentra enlazada desde otro sitio.
+#
+# Permitir la lectura y decir "noindex" dentro es lo que de verdad mantiene
+# la página fuera de los resultados.
+
+User-agent: *
+Allow: /

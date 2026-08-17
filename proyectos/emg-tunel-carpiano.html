@@ -1,0 +1,73 @@
+<!DOCTYPE html><html lang="es"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Deep learning aplicado a señales EMG y ENG para el diagnóstico del Síndrome del Túnel Carpiano · Francisco Solís Iturriaga</title><meta name="description" content="Trabajo de graduación del magíster: un modelo de aprendizaje profundo que integra señales electroneurográficas y electromiográficas mediante representaciones tiempo-frecuencia y aprendizaje por instancias múltiples, con un protocolo de evaluación fijado de antemano."><link rel="canonical" href="https://franciscosolisit.github.io/proyectos/emg-tunel-carpiano.html"><meta name="author" content="Francisco Solís Iturriaga"><meta name="color-scheme" content="light dark"><!-- El sitio es público por enlace, pero no se indexa. `noarchive` evita
+         además que los buscadores guarden una copia en caché. --><meta name="robots" content="noindex, nofollow, noarchive"><meta property="og:type" content="website"><meta property="og:locale" content="es_CL"><meta property="og:site_name" content="Francisco Solís Iturriaga"><meta property="og:title" content="Deep learning aplicado a señales EMG y ENG para el diagnóstico del Síndrome del Túnel Carpiano · Francisco Solís Iturriaga"><meta property="og:description" content="Trabajo de graduación del magíster: un modelo de aprendizaje profundo que integra señales electroneurográficas y electromiográficas mediante representaciones tiempo-frecuencia y aprendizaje por instancias múltiples, con un protocolo de evaluación fijado de antemano."><meta property="og:url" content="https://franciscosolisit.github.io/proyectos/emg-tunel-carpiano.html"><!-- Las redes exigen la URL absoluta: una ruta relativa no se resuelve. --><meta property="og:image" content="https://franciscosolisit.github.io/imagenes/portada-social.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Trabajo de graduación del magíster: un modelo de aprendizaje profundo que integra señales electroneurográficas y electromiográficas mediante representaciones tiempo-frecuencia y aprendizaje por instancias múltiples, con un protocolo de evaluación fijado de antemano."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://franciscosolisit.github.io/imagenes/portada-social.png"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Francisco Solís Iturriaga","jobTitle":"Ingeniero Civil Industrial | Magíster en Ingeniería Industrial","email":"mailto:francisco.solis@pucv.cl","url":"https://franciscosolisit.github.io/","sameAs":["https://www.linkedin.com/in/francisco-solis-iturriaga","https://github.com/FranciscoSolisIt"],"address":{"@type":"PostalAddress","addressLocality":"Viña del Mar, Chile"},"alumniOf":{"@type":"CollegeOrUniversity","name":"Pontificia Universidad Católica de Valparaíso"}}</script><link rel="stylesheet" href="/_astro/contacto.BUWi0Ds9.css">
+<style>.rol[data-astro-cid-ecv2khrf]{color:var(--acento);margin-bottom:1.25rem}.tecnologias[data-astro-cid-ecv2khrf]{margin-top:1.75rem}.portada[data-astro-cid-ecv2khrf]{margin:2.5rem 0 0;border:1px solid var(--borde);border-radius:var(--radio);overflow:hidden;background:var(--papel-2)}.portada[data-astro-cid-ecv2khrf] img[data-astro-cid-ecv2khrf]{display:block;width:100%;height:auto}.portada[data-astro-cid-ecv2khrf] figcaption[data-astro-cid-ecv2khrf]{font-size:.82rem;color:var(--tinta-3);padding:.6rem .9rem;border-top:1px solid var(--borde)}.cuerpo[data-astro-cid-ecv2khrf] blockquote{margin:0 0 1.5rem;padding:.85rem 1.1rem;border-left:3px solid var(--borde);background:var(--papel-2);border-radius:0 var(--radio) var(--radio) 0;color:var(--tinta-2);font-size:.925rem}.cuerpo[data-astro-cid-ecv2khrf] blockquote p:last-child{margin-bottom:0}.cuerpo[data-astro-cid-ecv2khrf]{margin-top:3rem;border-top:1px solid var(--borde);padding-top:2.5rem}.cuerpo[data-astro-cid-ecv2khrf] h2{margin-top:2.5rem;font-size:1.4rem}.cuerpo[data-astro-cid-ecv2khrf] h2:first-child{margin-top:0}.cuerpo[data-astro-cid-ecv2khrf] ol,.cuerpo[data-astro-cid-ecv2khrf] ul{padding-left:1.3rem;display:grid;gap:.45rem;color:var(--tinta-2)}.cuerpo[data-astro-cid-ecv2khrf] strong{color:var(--tinta)}
+</style></head> <body> <a class="saltar" href="#contenido">Saltar al contenido</a> <header class="cabecera"> <div class="contenedor cabecera__fila"> <a class="marca" href="/">Francisco Solís Iturriaga</a> <nav class="nav" aria-label="Navegación principal"> <a href="/"> Inicio </a><a href="/trayectoria"> Trayectoria </a><a href="/docencia"> Docencia </a><a href="/proyectos" aria-current="page"> Proyectos </a><a href="/laboratorio"> Laboratorio </a><a href="/cv"> CV </a><a href="/contacto"> Contacto </a> </nav> </div> </header> <main id="contenido">  <article class="seccion" data-astro-cid-ecv2khrf> <div class="contenedor" data-astro-cid-ecv2khrf> <p class="ojo" data-astro-cid-ecv2khrf> Investigación · 2024 – 2026 </p> <h1 class="prosa" data-astro-cid-ecv2khrf>Deep learning aplicado a señales EMG y ENG para el diagnóstico del Síndrome del Túnel Carpiano</h1> <p class="rol" data-astro-cid-ecv2khrf>Tesista de magíster</p> <p class="entradilla prosa" data-astro-cid-ecv2khrf>Trabajo de graduación del magíster: un modelo de aprendizaje profundo que integra señales electroneurográficas y electromiográficas mediante representaciones tiempo-frecuencia y aprendizaje por instancias múltiples, con un protocolo de evaluación fijado de antemano.</p> <ul class="etiquetas tecnologias" data-astro-cid-ecv2khrf> <li class="etiqueta" data-astro-cid-ecv2khrf>Encoding</li><li class="etiqueta" data-astro-cid-ecv2khrf>Python</li><li class="etiqueta" data-astro-cid-ecv2khrf>Deep Learning</li><li class="etiqueta" data-astro-cid-ecv2khrf>Multiple Instance Learning</li><li class="etiqueta" data-astro-cid-ecv2khrf>Análisis tiempo-frecuencia</li><li class="etiqueta" data-astro-cid-ecv2khrf>ResNet · EfficientNet</li> </ul> <figure class="portada" data-astro-cid-ecv2khrf> <img src="/imagenes/portada-tesis.png" alt="Portada de la defensa: &#34;Deep Learning Aplicado a Señales EMG y ENG para el Diagnóstico de STC Basado en Análisis Tiempo-Frecuencia&#34;, Francisco Solís Iturriaga, agosto de 2026, PUCV." width="1600" height="1200" loading="lazy" data-astro-cid-ecv2khrf> <figcaption data-astro-cid-ecv2khrf>Portada de la defensa del trabajo de graduación.</figcaption> </figure> <div class="acciones" data-astro-cid-ecv2khrf> <a class="boton" href="/laboratorio/senales" data-astro-cid-ecv2khrf>
+Ver la demo interactiva
+</a>  <a class="boton boton--secundario" href="/proyectos" data-astro-cid-ecv2khrf>Todos los proyectos</a> </div> <div class="cuerpo prosa" data-astro-cid-ecv2khrf> <h2 id="la-pregunta">La pregunta</h2>
+<p>El Síndrome del Túnel Carpiano es la neuropatía por atrapamiento más frecuente:
+cerca del 90 % de las neuropatías focales. Su estándar de referencia es el
+electrodiagnóstico: la electroneurografía mide la conducción del nervio y la
+electromiografía de aguja busca denervación. Ningún otro examen lo reemplaza.</p>
+<p>El informe clínico resume cada trazado en unas pocas latencias y amplitudes
+tipeadas. La señal completa existe, se registra y queda archivada. De ahí la
+pregunta que ordenó todo el trabajo:</p>
+<blockquote>
+<p><strong>¿Existe en esa señal información complementaria que se pierde al leerla
+únicamente como una serie temporal, y que otra representación sí podría
+capturar?</strong></p>
+</blockquote>
+<p>Planteada así, la pregunta es empírica: se puede responder comparando
+representaciones bajo un mismo protocolo, y admite tanto un sí como un no. Eso es
+distinto de asumir de entrada que la señal esconde algo y salir a buscarlo.</p>
+<h2 id="el-enfoque">El enfoque</h2>
+<p>En vez de trabajar con los parámetros tipeados, el trabajo recupera la señal
+misma desde el informe en PDF y la digitaliza a 200 puntos por trazado. Esa serie
+se reescribe como imagen mediante encodings tiempo-frecuencia (GASF, GADF, MTF,
+espectrograma y una fusión de los tres en canales de color) para que una red
+convolucional pueda leerla.</p>
+<p>Los dos exámenes son <strong>complementarios</strong>: el ENG mide cómo viaja el impulso por el
+nervio y el EMG qué ocurre en el músculo que ese nervio inerva. Pero no todos los
+pacientes tienen ambos: el estudio de conducción se realiza siempre, mientras que
+la electromiografía de aguja, al ser invasiva, solo se indica cuando el caso lo
+justifica. Algo menos de la mitad de las muñecas de la cohorte tenían registro de
+aguja, y un modelo que exigiera ambas fuentes habría descartado a la mayoría.</p>
+<p>La segunda decisión es de unidad de análisis. El diagnóstico es <strong>de la muñeca</strong>,
+no de cada trazado, y cada muñeca reúne un número variable de señales. Eso lo
+convierte en un problema de <strong>aprendizaje por instancias múltiples</strong>: la etiqueta
+está en la bolsa, no en cada instancia, y el modelo debe agregar la bolsa
+completa, incluso cuando falta el examen de aguja, que no todas las muñecas
+tienen.</p>
+<h2 id="el-protocolo-antes-que-los-modelos">El protocolo, antes que los modelos</h2>
+<p>Las reglas se fijaron antes de comparar nada: validación cruzada agrupada por
+sujeto, intervalos por bootstrap pareado y un criterio de promoción preregistrado:
+un candidato solo reemplaza al modelo vigente si el límite inferior de su
+intervalo de confianza es mayor que cero.</p>
+<p>Eso convierte la exploración en un contraste de hipótesis en vez de una búsqueda
+del número más alto.</p>
+<h2 id="el-descubrimiento-la-parsimonia-rinde">El descubrimiento: la parsimonia rinde</h2>
+<p>Se evaluó una escalera de candidatos, desde una línea base tabular hasta
+meta-ensambles de cuatro ramas con atención. Y al mirar los resultados juntos
+apareció algo que no se buscaba:</p>
+<blockquote>
+<p><strong>Los modelos más simples alcanzaban un rendimiento equivalente al de los más
+elaborados.</strong> La complejidad adicional no se traducía en una mejora que el
+protocolo pudiera distinguir del ruido.</p>
+</blockquote>
+<p>Una auditoría de transferencia lo reforzó: el candidato de dos ramas con un
+agregador sin parámetros sostenía mejor su desempeño fuera de la configuración
+donde había sido ajustado que el modelo con mejor cifra interna. Fue el que se
+desplegó.</p>
+<p>Esto abre una pregunta que vale más que el número: <strong>cuando dos modelos rinden
+igual, ¿sobre qué se decide?</strong> El criterio no puede ser el decimal más alto,
+porque el protocolo mismo dice que esa diferencia no es distinguible del azar.
+Aparecen entonces otros: cuántos parámetros hay que ajustar, cuánto cuesta
+entrenarlo de nuevo, qué tan explicable es ante un clínico, y qué tan bien
+aguanta al salir del entorno donde nació.</p>
+<p>Leído así, el aporte del trabajo no es solo el encoding, sino el protocolo que
+permitió llegar a esa conclusión y defenderla. Sin las reglas fijadas de
+antemano, la lectura natural habría sido desplegar el modelo de la cifra más
+alta y no enterarse nunca de que uno mucho más simple servía igual.</p>
+<h2 id="pruébalo">Pruébalo</h2>
+<p>El <a href="/laboratorio/senales">laboratorio ilustrado</a> permite generar señales ENG y EMG
+simuladas y ver, en vivo, cómo las transforma cada uno de los encodings usados en
+este trabajo.</p> </div> </div> </article>  </main> <footer class="pie"> <div class="contenedor pie__fila"> <span>© 2026 Francisco Solís Iturriaga · Viña del Mar, Chile</span> <span> <a href="mailto:francisco.solis@pucv.cl">francisco.solis@pucv.cl</a>  ·  <a href="https://www.linkedin.com/in/francisco-solis-iturriaga" rel="me noopener">LinkedIn</a>  · <a href="https://github.com/FranciscoSolisIt" rel="me noopener">GitHub</a>  </span> </div> </footer> </body></html> 
